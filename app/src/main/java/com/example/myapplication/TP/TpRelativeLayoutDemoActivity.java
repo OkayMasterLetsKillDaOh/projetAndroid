@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.myapplication.R;
 
-public class TpRelativeLayoutActivity extends AppCompatActivity {
+public class TpRelativeLayoutDemoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
