@@ -18,6 +18,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="text"
             android:layout_marginBottom="15dp"
             android:text="Hello World!" />
 
@@ -26,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
+            android:inputType="date"
             android:text="Hello World!"
             />
 
@@ -42,32 +44,87 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <android.widget.Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:layout_marginBottom="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:textColor="#fbcc07"
+                android:background="@drawable/bouton_blanc"
+                android:text="Login"/>
 
-
-            <Button
+            <android.widget.Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:layout_marginBottom="15dp"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                android:textColor="#fbcc07"
+                android:background="@drawable/bouton_blanc"
+                android:text="skip"/>
         </LinearLayout>
 
-        <Button
+        <android.widget.Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:backgroundTint="#ff0000"/>
+            android:textColor="#ffffff"
+            android:background="@drawable/bouton_jaune"
+            android:text="forgot password?"/>
 
-        <Button
+        <android.widget.Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp" />
+            android:layout_marginBottom="15dp"
+            android:textColor="#fbcc07"
+            android:background="@drawable/bouton_blanc"
+            android:text="Register"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/horizontalLineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="ou"
+                android:textColor="#FF0000"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/horizontalLineText"
+                android:background="#000000"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/horizontalLineText"
+                android:background="#000000"
+                />
+
+        </RelativeLayout>
+
+        <android.widget.Button
+            android:id="@+id/tp_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bouton_des_demos_background"
+            android:text="@string/main_bouton_tp"/>
 
     </LinearLayout>
 </RelativeLayout>
