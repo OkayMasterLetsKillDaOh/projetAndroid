@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="main_bouton_tp">Continuer vers les TPs</string>
 </resources>
