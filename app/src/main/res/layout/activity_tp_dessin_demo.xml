@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TP pour les dessins" />
+
+            <LinearLayout
+                android:id="@+id/ll_cercle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="Cercle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_etoile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="étoile" />
+
+                <com.example.myapplication.TP.customView.EtoileView
+                    android:id="@+id/etoileView"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_weight=".7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_coeur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Coeur" />
+
+                <!--
+                <com.example.myapplication.TP.customView.CoeurView
+                    android:id="@+id/coeur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_carte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Jeux de carte" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="Image" />
+
+                <com.example.myapplication.TP.customView.CustomImageDemoView
+                    android:id="@+id/customImageDemoView"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight=".3" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+

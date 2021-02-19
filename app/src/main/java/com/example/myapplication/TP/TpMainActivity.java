@@ -14,6 +14,8 @@ public class TpMainActivity extends AppCompatActivity {
 
     private Button relativeLayoutDemoButton;
     private Button relativeLayoutButton;
+    private Button dessinDemoButton;
+    private Button dessinButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,16 @@ public class TpMainActivity extends AppCompatActivity {
             public void onClick(View v){
                 //Toast.makeText(TpMainActivity.this, "Lets GO!", Toast.LENGTH_SHORT).show();
                 Intent tpLayoutActivityIntent = new Intent(TpMainActivity.this, TpRelativeLayoutActivity.class);
+                startActivity(tpLayoutActivityIntent);
+            }
+        });
+
+        dessinDemoButton = (Button) (findViewById(R.id.tp_dessin_demo));
+        dessinDemoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Toast.makeText(TpMainActivity.this, "Lets GO!", Toast.LENGTH_SHORT).show();
+                Intent tpLayoutActivityIntent = new Intent(TpMainActivity.this, TpDessinDemoActivity.class);
                 startActivity(tpLayoutActivityIntent);
             }
         });
