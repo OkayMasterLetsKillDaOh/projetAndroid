@@ -52,8 +52,7 @@ public class CustomImageDemoView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        Rect rectangle = new Rect( 0, 0, canvasWidth, canvasWidth/2 );
-        mCustomImage.setBounds(rectangle);
+        mCustomImage.setBounds(0, 0, canvasWidth, canvasWidth/2 );
         mCustomImage.draw(canvas);
 
         TextPaint textPaint = new TextPaint();

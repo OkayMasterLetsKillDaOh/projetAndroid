@@ -3,6 +3,7 @@ package com.example.myapplication.TP;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.myapplication.R;
@@ -28,8 +29,15 @@ public class TpDessinDemoActivity extends AppCompatActivity {
 
         llCercle = (LinearLayout) (findViewById(R.id.ll_cercle));
         CercleView cercleView = new CercleView(this);
-        cercleView.setLayoutParams(lp);
+        cercleView.setLayoutParams(new LinearLayout.LayoutParams(0,
+                300, (float) 0.35));
         llCercle.addView(cercleView);
+
+        Button b = new Button(this);
+        b.setText("test");
+        b.setLayoutParams(new LinearLayout.LayoutParams(0,
+                300, (float) 0.35));
+        llCercle.addView(b);
 
         /*llEtoile = (LinearLayout) (findViewById(R.id.ll_etoile));
         EtoileView etoileView = new EtoileView(this);

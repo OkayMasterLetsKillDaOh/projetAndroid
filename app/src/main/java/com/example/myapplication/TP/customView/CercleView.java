@@ -43,8 +43,13 @@ public class CercleView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         Paint mPaint = new Paint();
-        mPaint.setColor(Color.BLACK);
+        canvas.drawColor(Color.RED);
+
+        mPaint.setColor(Color.BLUE);
         canvas.drawCircle(canvasWidth/2, canvasHeight/2, Math.min( (float)(canvasWidth*0.8), (float)(canvasHeight*0.8))/2, mPaint);
+        mPaint.setColor(Color.BLACK);
+        canvas.drawRect(0, canvasHeight/3, canvasWidth, 2*canvasHeight/3, mPaint);
+        
         super.onDraw(canvas);
     }
 }

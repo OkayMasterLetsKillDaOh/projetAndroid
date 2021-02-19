@@ -53,14 +53,16 @@ public class EtoileView extends View {
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
         paint.setAntiAlias(true);
-        paint.setStyle(Paint.Style.STROKE);
 
         Path path = new Path();
         float mid = canvasWidth / 2;
         float min = Math.min(canvasWidth, canvasHeight);
-        float fat = min / 17;
         float half = min / 2;
+
+        // pour le cercle
+        float fat = min / 17;
         float rad = half - fat;
+
         mid = mid - half;
 
         paint.setStrokeWidth(fat);

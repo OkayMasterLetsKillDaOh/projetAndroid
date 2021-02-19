@@ -51,5 +51,15 @@ public class TpMainActivity extends AppCompatActivity {
             }
         });
 
+        dessinButton = (Button) (findViewById(R.id.tp_dessin));
+        dessinButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Toast.makeText(TpMainActivity.this, "Lets GO!", Toast.LENGTH_SHORT).show();
+                Intent tpDessinActivityIntent = new Intent(TpMainActivity.this, TpDessinActivity.class);
+                startActivity(tpDessinActivityIntent);
+            }
+        });
+
     }
 }

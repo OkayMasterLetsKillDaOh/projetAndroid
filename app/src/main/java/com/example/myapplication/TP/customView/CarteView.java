@@ -84,12 +84,14 @@ public class CarteView extends View {
 
         mPath2.computeBounds(rectF, true);
         scaleMatrix.setScale(0.25f, 0.25f,rectF.centerX(),rectF.centerY());
+
         mPath2.transform(scaleMatrix);
 
         mPath3 = new Path(mPath2);
 
-        mPath.offset(width,height);
         mPath3.offset( canvasWidth - width,canvasHeight - height );
+
+        mPath.offset(width,height);
     }
 
     @Override
@@ -108,6 +110,7 @@ public class CarteView extends View {
         canvas.drawPath(mPath, mPaint);
 
         mPaint.setColor(Color.BLUE);
+        mPaint.setStyle(Paint.Style.STROKE);
         canvas.drawPath(mPath2, mPaint);
         canvas.drawPath(mPath3, mPaint);
 

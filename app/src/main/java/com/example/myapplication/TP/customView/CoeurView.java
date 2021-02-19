@@ -63,6 +63,7 @@ public class CoeurView extends View {
 
         paint.setColor(Color.RED);
         paint.setStyle(Style.FILL);
+
         path.offset((canvasWidth - width)/2,(canvasHeight - height)/2);
 
     }
