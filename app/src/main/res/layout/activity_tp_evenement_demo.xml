@@ -21,21 +21,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/left"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fleche_layout"
                 android:layout_alignParentLeft="true"
-                android:text="&#8592;" />
+                android:background="@drawable/bouton_des_demos_background"
+                android:text="&#8592;"
+                android:textColor="#ffffff" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/right"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fleche_layout"
                 android:layout_alignParentRight="true"
-                android:text="&#8594;" />
+                android:background="@drawable/bouton_des_demos_background"
+                android:text="&#8594;"
+                android:textColor="#ffffff" />
 
         </RelativeLayout>
 

@@ -95,7 +95,7 @@ public class TpEvenementDemoActivity extends AppCompatActivity {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 Toast.makeText(TpEvenementDemoActivity.this, v.getText().toString().length() + " caractères.", Toast.LENGTH_SHORT).show();
-                mScrollView.setBackgroundColor(Color.BLACK);
+                // mScrollView.setBackgroundColor(Color.BLACK);
                 return true;
             }
         });
