@@ -19,6 +19,7 @@ public class AsView extends View {
     private Path mPath3;
     private Path mTextPath;
     private Path mTextPath2;
+    private Path mRectPath;
     private int canvasWidth;
     private int canvasHeight;
 
@@ -46,10 +47,23 @@ public class AsView extends View {
 
         mPath = new Path();
         mTextPath = new Path();
+        mRectPath = new Path();
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         float width = canvasWidth/3;
         float height = canvasHeight/3;
+
+        mRectPath.moveTo(canvasWidth/2,30);
+
+        mRectPath.cubicTo(canvasWidth-40, 30,
+                canvasWidth-30, 30,
+                canvasWidth-30, canvasHeight/4);
+        mRectPath.cubicTo(canvasWidth-30, canvasHeight-80,
+                canvasWidth-30, canvasHeight-30,
+                canvasWidth-80, canvasHeight-30);
+        mRectPath.cubicTo(40, canvasHeight-30,
+                30, canvasHeight-30,
+                30, canvasHeight-40);
 
         //Starting point
         mPath.moveTo(width / 2, height / 5);
@@ -99,11 +113,10 @@ public class AsView extends View {
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.STROKE); // default: FILL
         //mPaint.setStrokeJoin(Paint.Join.ROUND); // default: MITER
-        mPaint.setStrokeWidth(12); // default: Hairline-width (really thin)
-        canvas.drawRect(30, 30, canvasWidth - 30, canvasHeight - 30, mPaint);
+        mPaint.setStrokeWidth(12);
+        //canvas.drawRect(30, 30, canvasWidth - 30, canvasHeight - 30, mPaint);
 
         mPaint.setStyle(Paint.Style.FILL_AND_STROKE); // default: FILL
-        //canvas.drawCircle(canvasWidth/2,canvasHeight/2,canvasWidth/4, mPaint);
 
         mPaint.setColor(Color.RED);
         mPaint.setStyle(Paint.Style.FILL);
@@ -119,6 +132,8 @@ public class AsView extends View {
         canvas.drawPath(mPath3, mPaint);
         canvas.drawPath(mTextPath,mPaint);
         canvas.drawPath(mTextPath2,mPaint);
+        canvas.drawPath(mRectPath,mPaint);
+
 
     }
 
