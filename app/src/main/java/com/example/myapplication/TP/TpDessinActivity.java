@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.myapplication.R;
-import com.example.myapplication.TP.customView.TpEcoleView;
+import com.example.myapplication.TP.customView.AsView;
 
 public class TpDessinActivity extends AppCompatActivity {
 
@@ -20,9 +20,9 @@ public class TpDessinActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tp_dessin);
 
         llTp = (LinearLayout) (findViewById(R.id.ll_viewtp));
-        TpEcoleView TpView = new TpEcoleView(this);
-        TpView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+        AsView asView = new AsView(this);
+        asView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
-        llTp.addView(TpView);
+        llTp.addView(asView);
     }
 }
