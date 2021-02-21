@@ -60,7 +60,6 @@
 
             <Button
                 android:id="@+id/tp_dessin"
-                style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="1dp"
@@ -93,7 +92,6 @@
 
             <Button
                 android:id="@+id/tp_evenements"
-                style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="1dp"
