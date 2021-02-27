@@ -18,6 +18,8 @@ public class TpMainActivity extends AppCompatActivity {
     private Button dessinButton;
     private Button evenementsDemoButton;
     private Button evenementsButton;
+    private Button interfaceTactileDemoButton;
+    private Button interfaceTactileButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +71,15 @@ public class TpMainActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent tpEvenementsActivityIntent = new Intent(TpMainActivity.this, TpEvenementDemoActivity.class);
                 startActivity(tpEvenementsActivityIntent);
+            }
+        });
+
+        interfaceTactileDemoButton = (Button) (findViewById(R.id.tp_interface_tactile_demo));
+        interfaceTactileDemoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent tpInterfaceTactileDemoActivityIntent = new Intent(TpMainActivity.this, TpInterfaceTactileActivity.class);
+                startActivity(tpInterfaceTactileDemoActivityIntent);
             }
         });
 
