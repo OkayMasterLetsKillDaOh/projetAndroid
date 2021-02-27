@@ -1,4 +1,4 @@
-package com.example.myapplication.TP.customView.;
+package com.example.myapplication.TP.customView;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -73,17 +73,17 @@ public class GameView extends SurfaceView implements Runnable {
 
     }
 
-    public ExampleSurfaceViewDemo(Context context) {
+    public GameView(Context context) {
         super(context);
         init(context);
     }
 
-    public ExampleSurfaceViewDemo(Context context, AttributeSet attrs) {
+    public GameView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
 
-    public ExampleSurfaceViewDemo(Context context, AttributeSet attrs, int defStyleAttr) {
+    public GameView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context);
     }
@@ -129,7 +129,7 @@ public class GameView extends SurfaceView implements Runnable {
         mFlashlightCone = new FlashlightCone(mViewWidth, mViewHeight);
         mPaint.setTextSize(mViewHeight / 5);
         mBitmap = BitmapFactory.decodeResource(
-                mContext.getResources(), R.drawable.android);
+                mContext.getResources(), R.drawable.res);
         setUpBitmap();
     }
 
