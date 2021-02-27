@@ -1,4 +1,4 @@
-package com.example.myapplication.TP;
+package com.example.myapplication.TP.customView.;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,6 +16,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.TP.utils.FlashlightCone;
 
 /**
  * Created by MOMO Adrien Nickson on 17/02/21.
