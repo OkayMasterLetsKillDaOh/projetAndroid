@@ -92,7 +92,7 @@ public class GameView extends SurfaceView implements Runnable {
         mContext = context;
         mSurfaceHolder = getHolder();
         mPaint = new Paint();
-        mPaint.setColor(Color.DKGRAY);
+        mPaint.setColor(Color.BLUE); // Win!
         mPath = new Path();
     }
 
@@ -129,7 +129,7 @@ public class GameView extends SurfaceView implements Runnable {
         mFlashlightCone = new FlashlightCone(mViewWidth, mViewHeight);
         mPaint.setTextSize(mViewHeight / 5);
         mBitmap = BitmapFactory.decodeResource(
-                mContext.getResources(), R.drawable.res);
+                mContext.getResources(), R.drawable.android);
         setUpBitmap();
     }
 

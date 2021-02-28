@@ -9,13 +9,13 @@ import android.view.View;
 import com.example.myapplication.R;
 import com.example.myapplication.TP.customView.GameView;
 
-public class TpInterfaceTactileActivity extends AppCompatActivity {
+public class TpInterfaceTactileAvanceDemoActivity extends AppCompatActivity {
 
     private GameView mGameView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tp_interface_tactile);
+        setContentView(R.layout.activity_tp_interface_tactile_avance_demo);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         mGameView = new GameView(this);

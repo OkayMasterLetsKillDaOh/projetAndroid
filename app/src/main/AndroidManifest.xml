@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light"
         android:usesCleartextTraffic="true">
-        <activity android:name=".TP.TpInterfaceTactileActivity"></activity>
+        <activity android:name=".TP.TpInterfaceTactileDemoActivity"></activity>
+        <activity android:name=".TP.TpInterfaceTactileAvanceDemoActivity" />
         <activity android:name=".TP.TpEvenementDemoActivity" />
         <activity android:name=".TP.TpDessinActivity" />
         <activity android:name=".TP.TpDessinDemoActivity" />
