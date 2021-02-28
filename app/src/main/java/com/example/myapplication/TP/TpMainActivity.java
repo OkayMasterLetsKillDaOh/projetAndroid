@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.myapplication.R;
 
@@ -18,6 +17,10 @@ public class TpMainActivity extends AppCompatActivity {
     private Button dessinButton;
     private Button evenementsDemoButton;
     private Button evenementsButton;
+    private Button interfaceTactileDemoButton;
+    private Button interfaceTactileButton;
+    private Button interfaceTactileAvanceDemoButton;
+    private Button interfaceTactileAvanceButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +72,32 @@ public class TpMainActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent tpEvenementsActivityIntent = new Intent(TpMainActivity.this, TpEvenementDemoActivity.class);
                 startActivity(tpEvenementsActivityIntent);
+            }
+        });
+
+        interfaceTactileDemoButton = (Button) (findViewById(R.id.tp_interface_tactile_demo));
+        interfaceTactileDemoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent tpInterfaceTactileDemoActivityIntent = new Intent(TpMainActivity.this, TpInterfaceTactileDemoActivity.class);
+                startActivity(tpInterfaceTactileDemoActivityIntent);
+            }
+        });
+
+        interfaceTactileButton = (Button) (findViewById(R.id.tp_interface_tactile));
+        interfaceTactileButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent tpInterfaceTactileActivityIntent = new Intent(TpMainActivity.this, TpInterfaceTactileActivity.class);
+                startActivity(tpInterfaceTactileActivityIntent);
+            }
+        });
+        interfaceTactileAvanceDemoButton = (Button) (findViewById(R.id.tp_interface_tactile_avance_demo));
+        interfaceTactileAvanceDemoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent tpInterfaceTactileAvanceDemoActivityIntent = new Intent(TpMainActivity.this, TpInterfaceTactileAvanceDemoActivity.class);
+                startActivity(tpInterfaceTactileAvanceDemoActivityIntent);
             }
         });
 
