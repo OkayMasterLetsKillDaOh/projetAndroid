@@ -7,6 +7,7 @@
     tools:context=".TP.TpInterfaceTactileActivity">
 
     <com.example.myapplication.TP.customView.TpInterfaceTactileUnView
+        android:id="@+id/tp_interface_tactile_un"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
