@@ -75,7 +75,7 @@ public class TpInterfaceTactileUnView extends SurfaceView implements Runnable {
         positionX = w/2;
         positionY = h/2;
         thread = new Thread(this);
-        thread.run();
+        thread.start();
     }
 
     @Override

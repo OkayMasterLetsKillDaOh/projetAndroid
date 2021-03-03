@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TP.TpInterfaceTactileActivity">
-
-    <com.example.myapplication.TP.customView.TpInterfaceTactileUnView
+    <ImageView
+        android:id="@+id/myimageview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
