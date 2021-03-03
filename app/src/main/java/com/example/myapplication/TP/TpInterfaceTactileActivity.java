@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
+import com.example.myapplication.TP.customView.TpInterfaceTactileUnView;
 
 public class TpInterfaceTactileActivity extends AppCompatActivity {
 

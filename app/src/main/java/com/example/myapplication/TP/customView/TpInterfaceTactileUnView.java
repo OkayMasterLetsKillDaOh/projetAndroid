@@ -27,22 +27,39 @@ public class TpInterfaceTactileUnView extends SurfaceView implements Runnable {
 
     public TpInterfaceTactileUnView(Context context) {
         super(context);
+        mSurfaceHolder = getHolder();
     }
 
     public TpInterfaceTactileUnView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        mSurfaceHolder = getHolder();
     }
 
     public TpInterfaceTactileUnView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        mSurfaceHolder = getHolder();
+    }
+
+    public void resume(){
+        thread = new Thread(this);
+        thread.start();
+    }
+
+    public void pause(){
+        System.out.println("test!");
+        try {
+            thread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void run() {
         Canvas canvas;
         while (true) {
-            System.out.println("On est dans le thread!");
             if (mSurfaceHolder.getSurface().isValid()) {
+                System.out.println("On est dans le thread!");
                 canvas = mSurfaceHolder.lockCanvas();
                 canvas.save();
                 canvas.drawColor(Color.WHITE);
@@ -68,7 +85,6 @@ public class TpInterfaceTactileUnView extends SurfaceView implements Runnable {
         super.onSizeChanged(w, h, oldw, oldh);
         mViewWidth = w;
         mViewHeight = h;
-        mSurfaceHolder = getHolder();
         mPaint = new Paint();
         mPaint.setColor(Color.BLUE); // Win!
         mPathRectangle = new Path();
