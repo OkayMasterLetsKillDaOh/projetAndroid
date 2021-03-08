@@ -109,7 +109,7 @@
             android:layout_weight="1">
 
             <android.widget.Button
-                android:id="@+id/tp_interface_tactile_demo"
+                android:id="@+id/tp_interface_tactile"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
@@ -120,19 +120,8 @@
                 style="@style/boutonDesDemos"
                 android:background="@drawable/bouton_des_demos_background"
                 android:layout_margin="10dp"
-                android:text="interface tactile\nDemo" />
-
-            <Button
-                android:id="@+id/tp_interface_tactile"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="1dp"
-                android:layout_marginLeft="1dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_weight=".5"
-                android:layout_margin="10dp"
                 android:text="interface tactile" />
+
         </TableRow>
 
         <TableRow
@@ -141,7 +130,7 @@
             android:layout_weight="1">
 
             <android.widget.Button
-                android:id="@+id/tp_interface_tactile_avance_demo"
+                android:id="@+id/tp_"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
@@ -152,10 +141,10 @@
                 style="@style/boutonDesDemos"
                 android:background="@drawable/bouton_des_demos_background"
                 android:layout_margin="10dp"
-                android:text="interface tactile\navancé\nDemo" />
+                android:text="..." />
 
             <Button
-                android:id="@+id/tp_interface_tactile_avance"
+                android:id="@+id/tp___"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="1dp"
@@ -164,7 +153,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_weight=".5"
                 android:layout_margin="10dp"
-                android:text="interface tactile\navancé" />
+                android:text="..." />
         </TableRow>
 
     </TableLayout>

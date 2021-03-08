@@ -1,4 +1,4 @@
-package com.example.myapplication.TP;
+package com.example.myapplication.TP.interfaceTactile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
