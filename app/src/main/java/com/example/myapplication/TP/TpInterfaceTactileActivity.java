@@ -11,12 +11,14 @@ import com.example.myapplication.R;
 import com.example.myapplication.TP.interfaceTactile.TpInterfaceTactileArdoiseActivity;
 import com.example.myapplication.TP.interfaceTactile.TpInterfaceTactileAvanceDemoActivity;
 import com.example.myapplication.TP.interfaceTactile.TpInterfaceTactileDemoActivity;
+import com.example.myapplication.TP.interfaceTactile.TpInterfaceTactileExerciceUnActivity;
 
 public class TpInterfaceTactileActivity extends AppCompatActivity {
 
     private Button interfaceTactileDemoButton;
-    private Button ardoiseButton;
     private Button interfaceTactileAvanceDemoButton;
+    private Button ardoiseButton;
+    private Button exerciceUnButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,5 +51,13 @@ public class TpInterfaceTactileActivity extends AppCompatActivity {
             }
         });
 
+        exerciceUnButton = (Button) (findViewById(R.id.exercice_un));
+        exerciceUnButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent interfaceTactileExerciceUnActivity = new Intent(TpInterfaceTactileActivity.this, TpInterfaceTactileExerciceUnActivity.class);
+                startActivity(interfaceTactileExerciceUnActivity);
+            }
+        });
     }
 }
