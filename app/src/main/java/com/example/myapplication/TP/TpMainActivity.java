@@ -18,6 +18,8 @@ public class TpMainActivity extends AppCompatActivity {
     private Button evenementsDemoButton;
     private Button evenementsButton;
     private Button interfaceTactileButton;
+    private Button cycleDeVieButton;
+    private Button cycleDeVieDemoButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,5 +83,13 @@ public class TpMainActivity extends AppCompatActivity {
             }
         });
 
+        cycleDeVieDemoButton = (Button) (findViewById(R.id.tp_cycle_de_vie_demo));
+        cycleDeVieDemoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent tpCycleDeVieDemoActivityIntent = new Intent(TpMainActivity.this, CycleDeVieDemoActivity.class);
+                startActivity(tpCycleDeVieDemoActivityIntent);
+            }
+        });
     }
 }
