@@ -97,7 +97,6 @@ public class TpInterfaceTactileExerciceUnView extends View {
                     dessinerPoints();
                     break;
                 case MotionEvent.ACTION_POINTER_UP:
-                    List<Pointeur> nouveaux = new ArrayList<>();
                     pointeurs.remove(index);
                     dessinerPoints();
                     break;
