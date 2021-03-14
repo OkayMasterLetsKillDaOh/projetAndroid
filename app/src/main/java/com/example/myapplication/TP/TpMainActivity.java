@@ -87,7 +87,7 @@ public class TpMainActivity extends AppCompatActivity {
         cycleDeVieDemoButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent tpCycleDeVieDemoActivityIntent = new Intent(TpMainActivity.this, CycleDeVieDemoActivity.class);
+                Intent tpCycleDeVieDemoActivityIntent = new Intent(TpMainActivity.this, TpCycleDeVieDemoActivity.class);
                 startActivity(tpCycleDeVieDemoActivityIntent);
             }
         });

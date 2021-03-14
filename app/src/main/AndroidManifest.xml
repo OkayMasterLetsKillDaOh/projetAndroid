@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light"
         android:usesCleartextTraffic="true">
-        <activity android:name=".TP.CycleDeVieDemoActivity"></activity>
+        <activity android:name=".TP.TpAgeRequestActivity"></activity>
+        <activity android:name=".TP.TpCycleDeVieDemoActivity" />
         <activity android:name=".TP.interfaceTactile.TpInterfaceTactileExerciceUnActivity" />
         <activity android:name=".TP.interfaceTactile.TpInterfaceTactileArdoiseActivity" />
         <activity android:name=".TP.TpInterfaceTactileActivity" />

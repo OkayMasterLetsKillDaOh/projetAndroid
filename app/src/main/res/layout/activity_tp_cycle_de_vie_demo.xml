@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".TP.CycleDeVieDemoActivity">
+        tools:context=".TP.TpCycleDeVieDemoActivity">
 
     <TextView
         android:id="@+id/textView7"
@@ -15,4 +15,10 @@
         android:textSize="25dp"
         android:text="Cycle de vie"
         android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/age_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quel est ton age?" />
 </LinearLayout>
