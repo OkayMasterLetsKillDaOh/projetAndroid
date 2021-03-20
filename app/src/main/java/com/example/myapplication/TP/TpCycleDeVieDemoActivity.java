@@ -24,6 +24,7 @@ public class TpCycleDeVieDemoActivity extends AppCompatActivity {
     List<TextView> textViews = new ArrayList<TextView>();
     LinearLayout ll;
     public static final int AGE_REQUEST_ACTIVITY_CODE = 11;
+    public static final int NUMERO_MAGIQUE_REQUEST_ACTIVITY_CODE = 12;
     private Button mAgeButton;
 
     public String getNow(){
@@ -35,9 +36,7 @@ public class TpCycleDeVieDemoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tp_cycle_de_vie_demo);
         ll = findViewById(R.id.ll);
-        TextView texte = new TextView(this);
-        texte.setText("onCreate: " + getNow());
-        ll.addView(texte);
+        setText("onCreate:"+getNow(),false);
         mAgeButton = findViewById(R.id.age_button);
         mAgeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,50 +50,53 @@ public class TpCycleDeVieDemoActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        TextView texte = new TextView(this);
-        texte.setText("onStart: " + getNow());
-        ll.addView(texte);
+        setText("onStart: "+ getNow(),false);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         Toast.makeText(this, "Content de te revoir!", Toast.LENGTH_LONG);
-        TextView texte = new TextView(this);
-        texte.setText("onResume: " + getNow());
-        ll.addView(texte);
+        setText("onResume: "+ getNow(),false);
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        TextView texte = new TextView(this);
-        texte.setText("onPause: " + getNow());
-        ll.addView(texte);
+        setText("onPause: "+ getNow(),false);
+
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        TextView texte = new TextView(this);
-        texte.setText("onStop: " + getNow());
-        ll.addView(texte);
+        setText("onStop: "+ getNow(),false);
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        TextView texte = new TextView(this);
-        texte.setText("onActivityResult: " + getNow());
-        ll.addView(texte);
+        setText("onActivityResult: "+ getNow(),false);
+
 
         if (requestCode == AGE_REQUEST_ACTIVITY_CODE && resultCode == RESULT_OK) {
             int age = data.getIntExtra(TpAgeRequestActivity.AGE_KEY, -1);
-            texte = new TextView(this);
-            texte.setText("Okay Master Let's Kill Da Oh a " + age + " ans!");
-            texte.setTextSize(TypedValue.COMPLEX_UNIT_SP, 28);
-            ll.addView(texte);
+            setText("Okay Master Let's Kill Da Oh a " + age + " ans!",true);
         }
-        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == NUMERO_MAGIQUE_REQUEST_ACTIVITY_CODE && resultCode == RESULT_OK) {
+            //code...
+        }
+            super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public void setText(String texte, boolean isBigText){
+        TextView textV = new TextView(this);
+        textV.setText(texte);
+        if(isBigText){
+            textV.setTextSize(TypedValue.COMPLEX_UNIT_SP, 28);
+        }
+        ll.addView(textV);
     }
 
 
