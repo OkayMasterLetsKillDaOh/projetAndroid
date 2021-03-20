@@ -20,6 +20,8 @@ public class TpMainActivity extends AppCompatActivity {
     private Button interfaceTactileButton;
     private Button cycleDeVieButton;
     private Button cycleDeVieDemoButton;
+    private Button preferencesButton;
+    private Button preferencesDemoButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,5 +93,15 @@ public class TpMainActivity extends AppCompatActivity {
                 startActivity(tpCycleDeVieDemoActivityIntent);
             }
         });
+
+        preferencesDemoButton = (Button) (findViewById(R.id.tp_preferences_demo));
+        preferencesDemoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent tpPreferencesDemoActivityIntent = new Intent(TpMainActivity.this, TpPreferencesDemoActivity.class);
+                startActivity(tpPreferencesDemoActivityIntent);
+            }
+        });
+
     }
 }

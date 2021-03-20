@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="a"
+        android:title="A actif?" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="t"
+        android:title="T actif?" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="c"
+        android:title="C actif?" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="g"
+        android:title="G actif?" />
+
+    <ListPreference
+        android:defaultValue="#FF007F"
+        android:entries="@array/tp_preferences_nom_couleurs"
+        android:entryValues="@array/tp_preferences_couleurs"
+        android:key="couleur_de_fond"
+        android:title="Couleur de fond" />
+
+</PreferenceScreen>
