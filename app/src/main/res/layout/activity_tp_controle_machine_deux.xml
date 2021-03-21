@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".TP.TpControleMachineDeuxActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonCourt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#0099cc"
+            android:text="Court" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCarre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#0099cc"
+            android:text="Carré" />
+
+        <RadioButton
+            android:id="@+id/radioButtonArrondi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0099cc"
+            android:text="Arrondi" />
+    </RadioGroup>
+
+    <com.example.myapplication.TP.customView.GoogleView
+        android:id="@+id/googleView"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_toLeftOf="@id/radioGroup" />
+
+</RelativeLayout>

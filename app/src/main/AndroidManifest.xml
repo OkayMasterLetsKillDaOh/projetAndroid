@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light"
         android:usesCleartextTraffic="true">
-        <activity android:name=".TP.settings.TpPreferencesSettingsActivity"></activity>
+        <activity android:name=".TP.TpControleMachineDeuxActivity"></activity>
+        <activity android:name=".TP.settings.TpPreferencesSettingsActivity" />
         <activity android:name=".TP.TpPreferencesDemoActivity" />
         <activity android:name=".TP.TpAgeRequestActivity" />
         <activity android:name=".TP.TpCycleDeVieDemoActivity" />

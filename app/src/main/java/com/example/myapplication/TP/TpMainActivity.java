@@ -22,6 +22,8 @@ public class TpMainActivity extends AppCompatActivity {
     private Button cycleDeVieDemoButton;
     private Button preferencesButton;
     private Button preferencesDemoButton;
+    private Button controleMachineUnButton;
+    private Button controleMachineDeuxButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +102,15 @@ public class TpMainActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent tpPreferencesDemoActivityIntent = new Intent(TpMainActivity.this, TpPreferencesDemoActivity.class);
                 startActivity(tpPreferencesDemoActivityIntent);
+            }
+        });
+
+        controleMachineDeuxButton = (Button) (findViewById(R.id.tp_controle_machine_deux));
+        controleMachineDeuxButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent tpControleMachineDeuxActivityIntent = new Intent(TpMainActivity.this, TpControleMachineDeuxActivity.class);
+                startActivity(tpControleMachineDeuxActivityIntent);
             }
         });
 
