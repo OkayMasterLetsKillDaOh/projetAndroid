@@ -24,7 +24,7 @@ public class GoogleView extends View {
     private Path path;
     private Paint paint;
     private Paint.Join paintStyle = Paint.Join.BEVEL;
-    private boolean logoNoir = false;
+    private boolean logoNoir;
 
     public GoogleView(Context context) {
         super(context);
@@ -76,6 +76,7 @@ public class GoogleView extends View {
         paint.setStrokeWidth(Math.min(canvasWidth, canvasHeight)/10);
         paint.setStyle(Paint.Style.STROKE);
 
+        logoNoir = false;
         dessinerLogo();
     }
 
@@ -118,9 +119,17 @@ public class GoogleView extends View {
         //System.out.println();
         if (event.getPointerCount() > 0){
             logoNoir = true;
-        }else {
-            logoNoir = false;
         }
+        System.out.println(logoNoir);
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_UP:
+                logoNoir = false;
+                dessinerLogo();
+            default:
+                // do nothing
+        }
+
+        dessinerLogo();
         return true;
     }
 
