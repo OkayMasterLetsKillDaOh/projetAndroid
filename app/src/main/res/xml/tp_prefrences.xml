@@ -22,7 +22,7 @@
         android:title="G actif?" />
 
     <ListPreference
-        android:defaultValue="#FF007F"
+        android:defaultValue="#FFFFFF"
         android:entries="@array/tp_preferences_nom_couleurs"
         android:entryValues="@array/tp_preferences_couleurs"
         android:key="couleur_de_fond"

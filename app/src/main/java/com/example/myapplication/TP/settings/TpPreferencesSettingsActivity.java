@@ -1,12 +1,7 @@
 package com.example.myapplication.TP.settings;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.myapplication.R;
 

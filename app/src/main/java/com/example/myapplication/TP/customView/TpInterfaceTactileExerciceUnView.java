@@ -50,7 +50,7 @@ public class TpInterfaceTactileExerciceUnView extends View {
         mPaint = new Paint();
         dessinerPoints();
     }
-
+    
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
